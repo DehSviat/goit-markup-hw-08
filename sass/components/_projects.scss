@@ -1,0 +1,95 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin-top: 50px;
+    gap: 30px;
+ 
+
+
+
+    @media screen and (min-width: 480px) {
+       flex-direction: unset;
+      }
+      @media screen and (min-width: 768px) {
+        flex-direction: unset;
+    }
+      @media screen and (min-width: 1200px) {
+        flex-direction: unset;
+      }
+
+    &__card{
+        transition-property: box-shadow,transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        
+        max-width: 450px;
+        @media screen and (min-width: 480px) {
+          max-width: calc(( 100% - 30px ) / 2);
+          }
+          @media screen and (min-width: 768px) {
+            max-width: calc(( 100% - 60px ) / 3);
+        }
+        //   @media screen and (min-width: 1200px) {
+        //    width: 320px;
+        //   }
+        &:hover{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+        }
+
+    }
+
+    &__top-wrap{
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__top-text{
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        top: 0px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(28 / 18);
+        padding: 0px 24px;
+        color:var(--primary-white-color);
+        background-color:rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item-info{
+        border:1px solid #EEEEEE ;
+        border-top: none;
+        padding: 20px 24px;
+    
+    }
+
+    &__headline{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color:var(--color-title-black);
+        margin-bottom: 4px;
+         
+    }
+
+    &__slogan{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+    }
+    
+    
+}
+
+.projects__card:hover .projects__top-text{
+    transform: translateY(0%);
+}
