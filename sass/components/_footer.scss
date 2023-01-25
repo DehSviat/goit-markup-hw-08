@@ -182,6 +182,7 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        width: 100%;
 
         @media screen and (min-width: 768px) {
             flex-direction: unset;
@@ -191,6 +192,7 @@
     }
 
     &__subscription-text{
+       
         min-width: 450px;
         height: 50px;
         background-color: var(--title-text-color);
@@ -207,7 +209,7 @@
        }
        @media screen and (min-width: 768px) {
         width: 100%;
-        min-width: auto;
+        // min-width: auto;
       }
     }
 

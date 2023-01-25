@@ -140,7 +140,7 @@
 }
 .current{
     &::after{
-        content:"" ;
+        content:none ;
         display: block;
         width: 100%;
         height: 4px;
@@ -152,6 +152,17 @@
         animation-name: animation-width;
         animation-duration: 500ms;
         animation-timing-function: ease-in-out;
+
+        @media screen and (min-width: 480px) {
+            content: ""; 
+           display: block;
+           width: 100%;
+           height: 4px;
+        background: var(--accent-color);
+        border-radius: 2px;
+        position: absolute;
+        bottom: -1px;
+          }
     }
 }
 
@@ -178,6 +189,7 @@
     height: 100vh;
     background-color:var(--primary-white-color);
     padding: 21px 25px 46px 40px;
+    overflow-y: scroll;
 
     &__list{
         display: flex;

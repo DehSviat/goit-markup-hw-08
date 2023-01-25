@@ -23,14 +23,14 @@
 }
 
 &__item{
-    max-width: calc(( 100% - 30px ) / 2);
+      width: calc(( 100% - 30px ) / 2);
 
     @media screen and (min-width: 480px){
-    width:calc(( 100% - 60px ) / 3);
+       width:calc(( 100% - 60px ) / 3);
     }
 
-@media screen and (min-width: 768px){
-    width: 170px;
+    @media screen and (min-width: 768px){
+       width: 170px;
 }
 
 }
