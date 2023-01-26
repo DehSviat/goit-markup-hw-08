@@ -66,18 +66,15 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: green;
 }
 @media screen and (min-width: 480px) {
   .container {
     max-width: 768px;
-    background: orange;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1280px;
-    background-color: rgb(255, 47, 47);
   }
 }
 
@@ -102,7 +99,7 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header\ img\ \(1\).jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/X1/Header\ img\ mob\ x1-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -111,6 +108,31 @@ img {
   background-color: var(--title-text-color);
   max-width: 1600px;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/X2/Hero-bg-mob\ X2-min.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/X1/Header\ img\ tab\ x1-min.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/X2/hero-bg-tab\ X2-min.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero\ bg.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/X2/hero-desktop-x2-min.jpg);
+  }
 }
 .hero__title {
   color: var(--primary-white-color);
@@ -975,6 +997,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer__subscription-text {
     width: 100%;
+    min-width: auto;
   }
 }
 .footer__subscription-button {
