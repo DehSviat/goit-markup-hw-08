@@ -1,12 +1,18 @@
 .benefits{
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+          }
 
-    &__list{      
-        @media screen and (min-width: 480px){
-            display: flex;
+    &__list{    
+        display: flex;
+        gap: 30px;  
+        flex-direction: column;
+        @media screen and (min-width: 768px){
             flex-wrap: wrap;
-            gap: 30px;
+            flex-direction: unset;
             // justify-content: center;
         }
          
@@ -23,11 +29,12 @@
 
     &__item{
         max-width: 450px;
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
             width:calc((100% - 30px) / 2);
           }
-          @media screen and (min-width: 1200px) {
-            width: 270px;
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 180px) / 4);
           }
 
 
@@ -41,7 +48,7 @@
     text-transform: uppercase; 
     margin-top: 30px;
     text-align: center;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 1200px) {
         text-align: left;
         
      

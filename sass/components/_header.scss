@@ -34,11 +34,11 @@
     // }
     &__wrapper{
        
-        display: flex;
+        display: none;
         align-items: center;
         display: none;
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
             display: flex;
           }
     }
@@ -88,6 +88,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,&:focus{
         color: var(--accent-color);
+
+        // @media screen and (min-width: 768px){
+        //     width: 768px;
+        //   }
     }
         
     }
@@ -97,15 +101,15 @@
         gap: 10px;
         margin-left: auto;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
             flex-direction: unset;
             gap: 30px;
           }
     }
     &__contacts-link{
         font-weight: 500;
-        font-size: 14px;
-        line-height: calc(16 /14);
+        font-size: 12px;
+        line-height: calc(14 /12);
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
         display: flex;
@@ -119,14 +123,25 @@
         &:hover,&:focus{
             color: var(--accent-color);
         }
+
+        @media screen and (min-width: 1200px){
+            font-size: 14px;
+            line-height: calc(16/14);
+          }
        
 
     }
     &__contact-icon{
         fill: var(--primary-text-color);
+
+        width: 12px;
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 1200px){
+width: 16px;          }
+
 
         
 
@@ -185,6 +200,8 @@
     position: fixed;
     z-index: 2;
     top: 0px;
+    // width: 480px;
+    // height: 796px;
     width: 100vw;
     height: 100vh;
     background-color:var(--primary-white-color);
@@ -241,7 +258,7 @@
 
     .color{
         color: var(--accent-color);
-        font-size: 34px;
+        font-size: 27px;
         line-height: calc(40 / 34);
     }
 
@@ -250,6 +267,8 @@
     &__list{
         display: flex;
         margin-top: 64px;
+        flex-wrap: wrap;
+        
     }
     &__link{
         font-weight: 500;
@@ -282,7 +301,7 @@
     justify-content: space-between;
     padding: 16px 29px 16px 15px;
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
      display: none;
    
     }
@@ -303,4 +322,9 @@
     cursor: pointer;
 }
 }
+}
+.mob-header__button{
+    border: none;
+    background-color: var(--primary-white-color);
+ 
 }
