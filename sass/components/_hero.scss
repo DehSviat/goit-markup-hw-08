@@ -3,7 +3,7 @@
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)
      ),
-    url(/images/X1/Header\ img\ mob\ x1-min.jpg);
+    url(../images/X1/Header\ img\ mob\ x1-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     // background-size: 400px 480px;
@@ -42,7 +42,7 @@
         background-image:linear-gradient(
             rgba(47, 48, 58, 0.4),
              rgba(47, 48, 58, 0.4)),
-            url(/images/hero\ bg.jpg);
+            url(/images/herobg.jpg);
             @media (min-device-pixel-ratio: 2),
            (min-resolution: 192dpi),
            (min-resolution: 2dppx) {
@@ -56,8 +56,8 @@
     &__title{
         color: var(--primary-white-color);
         font-weight: 900;
-        font-size: 26px;
-        line-height: calc(42 / 26);
+        font-size: 44px;
+        line-height: calc(60 / 44);
         letter-spacing: 0.06em;
         text-transform: uppercase;
         width: 360px;
