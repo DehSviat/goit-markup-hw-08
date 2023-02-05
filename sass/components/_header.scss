@@ -47,7 +47,8 @@
         align-items: center;
     }
     &__logo{
-        
+        padding-top: 16px;
+        padding-bottom: 16px;
         color:#212121 ;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
@@ -302,7 +303,7 @@ width: 16px;          }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 29px 16px 15px;
+    // padding: 16px 29px 16px 15px;
 
 @media screen and (min-width: 768px) {
      display: none;

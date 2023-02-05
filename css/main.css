@@ -130,6 +130,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg.jpg);
   }
 }
@@ -471,6 +473,13 @@ img {
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .portfolio__filters {
   display: flex;
@@ -617,6 +626,8 @@ img {
   align-items: center;
 }
 .header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #212121;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -844,7 +855,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 29px 16px 15px;
 }
 @media screen and (min-width: 768px) {
   .mobile {
@@ -1080,9 +1090,19 @@ img {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 479px) {
   .footer__subscription-text {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__subscription-text {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscription-text {
+    width: 358px;
   }
 }
 .footer__subscription-button {
@@ -1296,16 +1316,7 @@ img {
   color: var(--accent-color);
   position: relative;
   cursor: pointer;
-}
-
-.text__contract::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #2196F3;
-  position: absolute;
-  bottom: 0px;
+  text-decoration: underline;
 }
 
 .modal-button {
